@@ -1,0 +1,33 @@
+
+.el-tooltip__popper[x-placement^="top"] .popper__arrow::after {
+    bottom: 1px;
+    margin-left: -5px;
+    border-top-color: #18454a;
+    border-bottom-width: 0;
+}
+
+.el-tooltip__popper {
+    max-width: 500px;
+}
+
+//去除tab按键样式
+.el-tooltip:focus:not(.focusing) {
+    outline-width: 0;
+}
+
+.el-tooltip__popper[x-placement^="right"] .popper__arrow {
+    left: -6px;
+    border-right-color: #18454a;
+    border-left-width: 0;
+}
+
+.el-tooltip__popper[x-placement^="right"] .popper__arrow::after {
+    bottom: -5px;
+    left: 1px;
+    border-right-color: #18454a;
+    border-left-width: 0;
+}
+
+.el-table .el-tooltip__popper.is-dark {
+    width: 300px;
+}

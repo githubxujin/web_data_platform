@@ -1,0 +1,85 @@
+    form {
+        font-family: PingFangSC-Light;
+
+        .el-form-item {
+            margin-bottom: 20px;
+
+            .el-input__inner {
+                height: 36px;
+                line-height: 36px;
+            }
+        }
+
+        .el-button {
+            font-family: PingFangSC-Light;
+        }
+    }
+
+    .el-form .el-input__inner,
+    .el-range-input {
+        font-family: PingFangSC-Light;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.80);
+    }
+
+    .el-date-editor .el-range-input {
+        color: rgba(255, 255, 255, 0.80);
+    }
+
+    .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before,
+    .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before {
+        color: #53DCEC;
+    }
+
+
+    .el-form-item__label {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.80);
+        text-align: right;
+    }
+
+    .el-form-item--mini .el-form-item__error {
+        padding-top: 0px;
+    }
+
+    .el-form-item__error {
+        background: #37393e;
+        color: #dd5e3e;
+        padding: 8px 20px 8px 20px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        left: 10px;
+        border-radius: 2px;
+        top: 30px;
+        z-index: 999999999;
+
+        &:before {
+            content: " ";
+            border-bottom: 4px solid #37393e;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            position: absolute;
+            top: -4px;
+            left: 20px;
+        }
+    }
+
+    .el-form-item__label {
+        line-height: 32px;
+    }
+
+    .el-item-form-width {
+        width: 185px;
+    }
+
+    .el-item-date-width {
+        width: 350px;
+    }
+
+    .dialog-el-item-form-width {
+        width: 360px;
+    }
+
+    .el-item-form-width-300 {
+        width: 300px;
+    }

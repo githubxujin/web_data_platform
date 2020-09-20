@@ -1,0 +1,53 @@
+.light {
+    .el-input__inner {
+        border: 1px solid #2D3034;
+        color: #909399;
+    }
+
+    .el-pagination__total {
+        margin-right: 10px;
+        font-weight: 400;
+        color: #909399;
+    }
+
+    .el-pagination button:hover {
+        color: #4064D4
+    }
+
+    .el-pager li {
+        color: #909399;
+    }
+
+    .el-pagination {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .el-pagination .btn-next,
+    .el-pagination .btn-prev {
+        background: none;
+    }
+
+    .el-pagination button:disabled {
+        background: none;
+    }
+
+    .el-dialog,
+    .el-pager li {
+
+        background: none;
+    }
+
+    .el-pager li.active {
+        color: #4064D4
+    }
+
+    .el-pager li:hover {
+        color: #4064D4
+    }
+
+    .el-pagination__sizes .el-input .el-input__inner:hover {
+        border-color: #4064D4
+    }
+
+}

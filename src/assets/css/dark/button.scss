@@ -1,0 +1,54 @@
+@import "../mixins/button";
+
+/* 授信评估定位按钮 */
+.btnGray_content {
+    margin-bottom: 20px;
+}
+
+.btnGray {
+    font-size: 12px;
+    color: #a0a3a8;
+    background: #2d3034;
+    border: 1px solid transparent;
+
+    &:hover {
+        background: #1e292e;
+        border: 1px solid #366f71;
+        box-sizing: border-box;
+    }
+
+    &.el-button.el-button--default {
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    &.el-button+.el-button {
+        margin-left: 0;
+    }
+}
+
+/* 
+    查询  重置
+    $background-color, $active-background-color, $color, $border-color, $selector
+    */
+@include button(#1E252E, #313B4C, #6188E1, #3d548a, 'info');
+@include button(#1E292E, #273840, #53DCEC, #366f71, 'primary');
+@include button(#2f2828, #413636, #dd5e3e, #dd5e3e, 'danger');
+
+.el-button {
+    border-radius: 0;
+}
+
+/* 
+    详情, 编辑，删除
+    button-is-plain
+    $color,
+    $border-color,
+    $background-color
+    $acitve-color
+    $selector
+    */
+@include button-is-plain(#43A1AC, #366F71, #273840, #43A1AC, 'primary');
+@include button-is-plain(#6188E1, #3D548A, #313B4C, #6188E1, 'info');
+@include button-is-plain(#DD5E3E, #8C3B26, #2F2828, #DD5E3E, 'danger');
+@include button-is-plain(#3DBD7D, #3DBD7D, #2B3536, #3DBD7D, 'success');

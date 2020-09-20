@@ -1,0 +1,184 @@
+.light {
+    .el-form-item__content .el-input.is-disabled .el-input__inner {
+        background: #fff;
+        border: 1px solid #DCDFE6;
+        color: #666;
+    }
+
+    .el-input__inner {
+        background: #fff;
+        border: 1px solid #DCDFE6;
+        color: #666;
+
+        &::placeholder {
+            color: #666;
+        }
+
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+            background-color: transparent;
+            background-image: none;
+            transition: background-color 50000s ease-in-out 0s; //背景色透明  生效时长  过渡效果  启用时延迟的时间
+            -webkit-text-fill-color: #ffffff; //设置字体颜色
+        }
+    }
+
+    .el-textarea .el-input__count {
+        color: #909399;
+        background: none;
+        position: absolute;
+        font-size: 12px;
+        bottom: 5px;
+        right: 10px;
+    }
+
+    .el-select .el-input.is-focus .el-input__inner {
+        border-color: #4064D4;
+    }
+
+    .el-select .el-input__inner:focus {
+        border-color: #4064D4;
+    }
+
+    .el-input.is-active .el-input__inner,
+    .el-input__inner:focus {
+        border-color: #4064D4;
+    }
+
+    .el-range-input {
+        background: transparent;
+    }
+
+
+
+    .el-textarea__inner {
+        background: #fff;
+        border: 1px solid #DCDFE6;
+    }
+
+    .el-textarea__inner:hover {
+        border-color: #4064D4;
+    }
+
+    .el-textarea__inner:focus {
+        border-color: #4064D4;
+    }
+
+    .el-input.is-disabled .el-input__inner {
+        // background: #1d1e23;
+        // border: 1px solid #2d3034;
+        color: #909399;
+    }
+
+    .el-select .el-input.is-disabled .el-input__inner {
+        &:hover {
+            border-color: #2d3034;
+        }
+    }
+
+    .el-checkbox {
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: #666;
+        letter-spacing: 0.47px;
+
+        .el-checkbox__label {
+            // font-family: PingFangSC-Light;
+            font-size: 12px;
+            color: #666;
+            letter-spacing: 0.47px;
+        }
+
+        .el-checkbox__inner {
+            border: 1px solid #4064D4;
+            background: none;
+
+            &:hover,
+            &:focus,
+            &:active {
+                border: 1px solid #4064D4;
+                background: none;
+            }
+
+            &::after {
+                border-color: #fff;
+            }
+        }
+    }
+
+    .el-checkbox__input.is-checked .el-checkbox__inner {
+        background: #4064D4;
+        border-color: #4064D4;
+        border-radius: 2px;
+    }
+
+    .el-checkbox__input.is-checked+.el-checkbox__label {
+        color: #666;
+    }
+
+    .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        background: #4064D4;
+
+        border-color: #4064D4;
+
+        &::before {
+            background-color: #fff;
+        }
+    }
+
+    .el-upload-list__item .el-icon-upload-success {
+        color: #67C23A;
+    }
+
+    .el-upload-list__item.is-success .el-upload-list__item-name:focus,
+    .el-upload-list__item.is-success .el-upload-list__item-name:hover {
+        background: #fff;
+        color: #666;
+    }
+
+    .el-upload-list__item:hover {
+        background: #fff;
+        color: #666;
+    }
+
+    .el-upload-list__item-name {
+        color: #666;
+    }
+
+    .el-textarea.is-disabled .el-textarea__inner {
+        // background-color: #1d1e23;
+        // // border-color: #2d3034;
+    }
+
+    .el-range-editor--mini .el-range-separator {
+        line-height: 26px;
+    }
+
+    .el-checkbox__input.is-focus .el-checkbox__inner {
+        border-color: #4064D4;
+    }
+
+    .el-autocomplete-suggestion {
+        background-color: #fff;
+        border-color: #DCDFE6;
+    }
+
+    .el-autocomplete-suggestion.is-loading li:hover {
+        background-color: #DCDFE6;
+    }
+
+    .el-autocomplete-suggestion li {
+        padding: 0 20px;
+        margin: 0;
+        line-height: 34px;
+        cursor: pointer;
+        color: #666;
+        font-size: 14px;
+        list-style: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // font-family: PingFangSC-Light;
+    }
+
+}

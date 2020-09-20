@@ -1,0 +1,30 @@
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+    background: rgba(67, 161, 172, 0.07);
+    color: #51b5bf;
+}
+
+.el-dropdown-menu__item--divided:before {
+    background: #2D3034;
+}
+
+.el-dropdown-menu {
+    background: #2D3034;
+    border: none;
+}
+
+.el-dropdown {
+    color: #a0a3a8;
+}
+
+.el-dropdown-menu__item {
+    list-style: none;
+    line-height: 36px;
+    padding: 0 20px;
+    margin: 0;
+    font-size: 14px;
+    color: #dcdfe6;
+    cursor: pointer;
+    outline: 0;
+    background: #2D3034;
+}

@@ -1,0 +1,12 @@
+@mixin message ($el, $br, $bg) {
+    .el-message {
+        padding: 7px 15px 7px 20px;
+    }
+
+    .el-message--#{$el} {
+        background-color: $bg;
+        border-color: $br;
+
+    }
+
+}

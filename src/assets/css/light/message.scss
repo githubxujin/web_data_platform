@@ -1,0 +1,8 @@
+@import "../mixins/message";
+/* 
+$el, $br, $bg
+*/
+@include message('success', #A7E1C4, #EBF8F2);
+@include message('error', #FCCCA7, #FEF3EB);
+@include message('warning', #FFE9A7, #FFFAEB, );
+@include message('info', #ADD8F7, #ECF6FD);

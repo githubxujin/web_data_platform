@@ -1,0 +1,22 @@
+@mixin backtop() {
+    .el-backtop {
+        background-color: #18454a;
+        position: fixed;
+
+        &:hover {
+            background-color: #43a1ac;
+            border: 1px solid #43a1ac;
+
+            [class*=' el-icon-'],
+            [class^='el-icon-'] {
+                color: #18454a;
+                ;
+            }
+        }
+    }
+
+    .el-backtop,
+    .el-calendar-table td.is-today {
+        color: #43a1ac;
+    }
+}

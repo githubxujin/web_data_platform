@@ -1,0 +1,156 @@
+@import "../light-variable";
+
+/* tabs 统计概况 */
+.light {
+    .el-tabs__item {
+        color: $tabs_color;
+        font-family: PingFangSC-Regular;
+    }
+
+    .el-tabs__item.is-active {
+        color: $tabs_active;
+        background: $tabs_bg;
+    }
+
+    .el-tabs--card>.el-tabs__header .el-tabs__nav {
+        border-bottom: none;
+        border: 1px solid $tabs_border;
+        border-radius: 4px;
+
+        .el-tabs__item {
+
+
+            &:not(:first-child) {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+
+    .el-tabs--card>.el-tabs__header .el-tabs__item {
+        border: none;
+    }
+
+    .el-tabs--card>.el-tabs__header {
+        border-bottom: none;
+
+        .el-tabs__item {
+            height: 36px;
+            line-height: 36px;
+        }
+    }
+
+    .el-tabs__item:hover {
+        background: $tabs_bg;
+        cursor: pointer;
+        color: $tabs_active;
+    }
+
+    .el-tabs__nav-scroll {
+        margin-top: 20px;
+        margin-bottom: 6px;
+    }
+
+    .el-tabs--border-card {
+        background: $tabs_bg;
+        border: none;
+        color: #333;
+        font-size: 12px;
+
+
+        .el-tabs__nav {
+            margin-top: -3px;
+        }
+    }
+
+    .el-tabs__content {
+        background-color: #fff;
+        overflow: visible;
+    }
+
+    /* tabs 统计概况 */
+
+
+    /* 概况 */
+    .el-tabs--border-card>.el-tabs__header {
+        background: #F1F4FC;
+        border-bottom: 2px solid #DEE5F7;
+        height: 48px;
+    }
+
+    .el-tabs--border-card>.el-tabs__header .el-tabs__item {
+        border-right: 1px solid #DDE0E8;
+        color: #666666;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+        background: #F1F4FC;
+        color: #4064D4;
+
+        border-left: 1px solid #DDE0E8;
+
+        border-right: 1px solid #DDE0E8 &:last-child {
+            border-right: none;
+        }
+    }
+
+    .el-tabs--border-card>.el-tabs__header .el-tabs__item:not(.is-disabled):hover {
+        color: #4064D4;
+        border-left: 1px solid #DDE0E8;
+        background: none;
+    }
+
+
+
+    .table-wrap {
+        .el-tabs__item {
+            height: 20px;
+            line-height: 20px;
+        }
+    }
+
+    .el-table--border,
+    .el-table--group {
+        border: none;
+    }
+
+    .el-table thead.is-group th {
+        background: #2d3034;
+    }
+
+
+
+    .el-tabs__content {
+        overflow: visible;
+    }
+
+    .el-tabs--border-card>.el-tabs__content {
+        padding: 0;
+    }
+
+    .el-20 {
+        background: #EBECF3;
+        height: 20px;
+        width: 100%;
+        padding: 0 120px;
+        margin: 0 auto;
+        margin-left: -60px;
+    }
+
+    .el-tabs--border-card {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .el-tabs__item:focus.is-active.is-focus:not(:active) {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 3px;
+    }
+
+    /* 概况 */
+}

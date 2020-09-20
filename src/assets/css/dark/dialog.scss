@@ -1,0 +1,88 @@
+/* 贾大爷提示 */
+.tishi {
+    font-family: PingFangSC-Light;
+    margin-top: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+    line-height: 20px;
+
+}
+
+.el-message-box__wrapper {
+    z-index: 99999999 !important
+}
+
+.el-dialog,
+.el-pager li {
+    background: #232528;
+}
+
+
+
+.el-dialog__title {
+    line-height: 24px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.el-dialog__header {
+    border-bottom: 1px solid #3D3F43;
+}
+
+.el-dialog__footer {
+    text-align: center;
+    padding: 12px 20px;
+    border-top: 1px solid #3D3F43;
+}
+
+.el-message-box {
+    background: #232528;
+    box-shadow: 0 7px 19px 0 rgba(0, 0, 0, 0.30);
+    border: none;
+    padding-bottom: 0;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.el-message-box__content {
+    padding-bottom: 30px;
+}
+
+.el-message-box__title {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.el-message-box__message p {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.el-message-box__btns {
+    border-top: 1px solid #3D3F43;
+    padding: 12px 20px;
+
+
+
+    .el-button {
+        border: 1px solid #366F71;
+        background-color: #232528;
+        width: 68px;
+        height: 24px;
+        line-height: 23px;
+        font-size: 12px;
+        padding: 0;
+        color: #53DCEC;
+
+        &:hover {
+            background-color: #18454A;
+        }
+    }
+}
+
+.el-dialog__headerbtn:focus .el-dialog__close,
+.el-dialog__headerbtn:hover .el-dialog__close {
+    color: #53DCEC;
+}
+
+.el-dialog__body {
+    padding-bottom: 10px;
+}

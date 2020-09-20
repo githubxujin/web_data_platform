@@ -1,0 +1,23 @@
+@import "./tabs";
+@import "./header";
+@import "./nav";
+@import "./pagination";
+@import "./form";
+@import "./input";
+
+.light {
+    @import "./form";
+    @import "./select";
+    @import "./button";
+    @import "./dialog";
+    @import "./iconfont";
+    @import "./breadcrumb";
+    @import "./date";
+    @import "./popover";
+    @import "./title";
+    @import "./menu";
+    @import "./tag";
+    @import "./table";
+    @import "./drawer";
+    @import "./message";
+}

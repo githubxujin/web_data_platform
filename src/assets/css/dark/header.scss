@@ -1,0 +1,368 @@
+    .header {
+
+        .el-dialog__wrapper {
+            z-index: 99999999 !important;
+        }
+
+
+
+        // 由于点击搜索框会导致退出按钮变形，把280的宽度更改为260的宽度
+        .header-right-l {
+            /deep/ .el-input__inner {
+                transition: all 0.5s;
+
+                &:focus {
+                    width: 250px;
+                }
+            }
+        }
+
+        .radio-box {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            font-size: 16px;
+            color: #303133;
+            z-index: 1;
+            width: 90%;
+            margin: 0 auto;
+
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                width: 100%;
+                border-bottom: 2px solid #ebeef5;
+                content: "";
+            }
+
+            .radio-item {
+                position: relative;
+                cursor: pointer;
+                height: 45px;
+                line-height: 45px;
+                z-index: 2;
+                width: 50%;
+                text-align: center;
+
+                &.act {
+                    color: #366f71;
+                    border-bottom: 2px solid #366f71;
+                    margin-bottom: 1px;
+                }
+            }
+        }
+
+        .el-tabs__nav-scroll {
+            // 操作配置里面的左侧的高度用来改变竖线
+            height: 240px;
+        }
+
+        .header-menu {
+            .el-tabs__item {
+                &:last-child {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .header-right-l,
+        .header-right-theme {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .drop-menu {
+            height: 50px;
+            line-height: 56px;
+
+            span {
+                color: #fff;
+            }
+
+            &:hover {
+                span {
+                    color: #51b5bf;
+                }
+            }
+        }
+
+        .iconfont,
+        .logout {
+            height: 50px;
+            color: #51b5bf;
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-left: 8px;
+            }
+        }
+
+        .el-dropdown {
+            margin-top: 16px;
+            margin-left: -30px;
+        }
+
+        .el-nickname {
+            color: #51b5bf;
+        }
+
+        .user-name {
+            color: #51b5bf;
+        }
+
+        .el-icon-user:before,
+        .el-icon-bell:before {
+            color: #51b5bf;
+            font-size: 20px;
+        }
+
+        .el-icon-arrow-down:before {
+            color: #51b5bf;
+            border: 1px solid #51b5bf;
+            border-radius: 50%;
+        }
+
+        .icon-tongyong-yonghumingtubiao1:before {
+            color: #51b5bf;
+        }
+
+
+
+        .el-tabs__content {
+            background: none;
+        }
+
+        .el-tabs__item {
+            color: #dce0e9;
+        }
+
+        .el-tabs__item.is-active {
+            background: none;
+            color: #43a1ac;
+
+            &::before {
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: #43a1ac;
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                margin-top: -2px;
+            }
+        }
+
+        .el-tabs__item:hover {
+            background: none;
+        }
+
+        .el-input__inner {
+            margin-top: 12px;
+            width: 140px;
+            height: 28px;
+            line-height: 28px;
+            border: 1px solid #324b46;
+        }
+
+        .el-input__icon {
+            line-height: 52px;
+            color: #41a4b0;
+        }
+
+        .el-tabs__nav-wrap::after {
+            background-color: #3a3e44;
+        }
+
+        .el-tabs__active-bar {
+            background-color: #43a1ac;
+        }
+
+        font-family: PingFangSC-Light;
+        width: 100%;
+        height: 50px;
+        background: #232528;
+        border: 1px solid rgba(52, 133, 139, 0.14);
+        box-shadow: 0 2px 63px 0 rgba(26, 62, 79, 0.22);
+
+        &-wrap {
+            width: 1360px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-left {
+            display: flex;
+        }
+
+        &-right {
+            width: 470px;
+            display: flex;
+            justify-content: flex-end;
+            height: 50px;
+
+            &-l {
+                margin-right: 10px;
+            }
+
+            &-m {
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                margin-right: 20px;
+
+                .el-button {
+                    color: #51b5bf;
+
+                    span {
+                        font-family: PingFangSC-Light;
+                        color: #fff;
+                    }
+                }
+
+                .loging-name {
+                    height: 70px;
+                    margin-top: -10px;
+                    display: flex;
+                    align-items: center;
+
+                    .wel {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+
+        &-nav {
+            list-style: none;
+            font-size: 15px;
+            color: #cccccc;
+            display: flex;
+
+            .active {
+                color: #43a1ac;
+            }
+
+            li {
+                margin-right: 56px;
+                position: relative;
+                font-size: 15px;
+                height: 40px;
+
+                &:hover {
+                    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+                    cursor: pointer;
+                    color: #43a1ac;
+
+                    .header-menu {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &-menu {
+            display: none;
+            position: absolute;
+            top: 38px;
+            width: 960px;
+            background: #2d3034;
+            z-index: 999999999;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+
+            &:before {
+                content: " ";
+                border-bottom: 8px solid #2d3034;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                position: absolute;
+                top: -4px;
+                left: 4px;
+            }
+        }
+
+        &-logo {
+            width: 134px;
+            height: 50px;
+            margin-left: -20px;
+            background: url("../../assets/images/logo.png") no-repeat 40% center;
+            background-size: 100px 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-menu {
+            &-right {
+                display: flex;
+                width: 787px;
+                margin-top: 30px;
+
+                .menu-right-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 24px;
+                }
+
+                .menu-right-top-title {
+                    font-family: PingFangSC-Regular;
+                    font-size: 14px;
+                    color: #dcdfe6;
+                    line-height: 4px;
+                    height: 20px;
+                    border-bottom: 2px solid #3a3e44;
+                }
+
+                .active {
+                    color: #43a1ac !important;
+
+                    &::before {
+                        content: "";
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background: #43a1ac;
+                        position: absolute;
+                        left: -10px;
+                        top: 5px;
+                    }
+                }
+
+                .header-menu-right-title {
+                    position: relative;
+
+                    &:hover,
+                    :focus {
+                        cursor: pointer;
+                        color: #43a1ac;
+                    }
+
+                    //第三级菜单高亮
+                    &:hover {
+                        &::before {
+                            content: "";
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            background: #43a1ac;
+                            position: absolute;
+                            left: -10px;
+                            top: 5px;
+                        }
+                    }
+
+                    margin-top: 12px;
+                    font-family: PingFangSC-Regular;
+                    font-size: 12px;
+                    color: rgba(220, 223, 230, 0.68);
+                    line-height: 14px;
+                }
+            }
+        }
+    }

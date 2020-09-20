@@ -1,0 +1,491 @@
+.el-select .el-tag__close.el-icon-close {
+    right: -2px;
+}
+
+.el-select-dropdown {
+    background-color: #FFFFFF;
+    border: solid 1px #DCDFE6;
+
+}
+
+select-box span:focus-within {
+    border: none;
+    outline: none;
+}
+
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+    color: #4064D4;
+    background-color: #fff;
+    font-weight: normal;
+}
+
+.el-select-dropdown__item {
+    color: #666;
+    // font-family: PingFangSC-Light;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+    color: #4064D4;
+    background: #F0F2FB
+}
+
+
+
+.el-select:hover .el-input__inner {
+    border-color: #4064D4;
+}
+
+.el-cascader .el-input.is-focus .el-input__inner {
+    border-color: #4064D4;
+}
+
+.el-select-dropdown__item.selected {
+    color: #4064D4;
+    font-weight: normal;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow::after {
+    top: 1px;
+    margin-left: -6px;
+    border-top-width: 0;
+    border-bottom-color: #fff;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+    border-bottom-color: #DCDFE6;
+}
+
+.el-cascader__dropdown {
+    background: #fff;
+    border-color: #2d3034;
+    color: #666;
+    // font-family: PingFangSC-Light;
+
+    .el-cascader-menu {
+        border-right: 1px solid #2D3034;
+        color: #666;
+
+        li {
+            background: #fff;
+
+            &:hover {
+                background: rgba(67, 161, 172, 0.07);
+                color: #4064D4;
+            }
+
+            &.in-active-path {
+                color: #4064D4;
+                font-weight: normal;
+                ;
+            }
+
+            &.el-cascader-node:not(.is-disabled):focus {
+                background: #fff;
+            }
+        }
+
+    }
+}
+
+.el-select .el-tag__close.el-icon-close {
+    background-color: #4064D4;
+
+    &:hover {
+        background-color: #4064D4;
+    }
+}
+
+.el-tag.el-tag--info .el-tag__close {
+    color: #fff;
+}
+
+.el-icon-circle-close:before {
+    color: #4064D4;
+}
+
+
+
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected.hover {
+    background: none;
+}
+
+.el-select-dropdown__item.is-disabled:hover {
+    background: none;
+}
+
+.el-cascader-node.is-active {
+    color: #4064D4;
+    font-weight: normal;
+}
+
+.el-select .el-input .el-select__caret {
+    color: #C0C4CC;
+    font-size: 14px;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+    cursor: pointer;
+
+    &:hover {
+        color: #366F71;
+    }
+}
+
+.el-tag.el-tag--info {
+    background-color: #F0F2FB;
+    border-color: #F0F2FB;
+    color: #4064D4;
+
+}
+
+.select-year {
+    border-color: none !important;
+}
+
+.select-year.whit-col {
+    border-color: #4064D4 !important;
+
+}
+
+.el-cascader:not(.is-disabled):hover .el-input__inner {
+    border-color: #4064D4 !important;
+}
+
+.el-autocomplete-suggestion li.highlighted,
+.el-autocomplete-suggestion li:hover {
+    background: #fff;
+    color: #4064D4;
+}
+
+.el-cascader-node.in-active-path,
+.el-cascader-node.is-active,
+.el-cascader-node.is-selectable.in-checked-path {
+    color: #4064D4;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+    border-color: #4064D4;
+    background: #4064D4;
+}
+
+/* 
+city-box 省市框
+选择数字select
+改这个样式差点吐血身亡
+贾大爷代码不敢动
+*/
+.show-hide {
+    display: inline-block;
+
+    text-align: center;
+
+    border-color: #DCDFE6;
+
+    &:focus {
+        border-color: #4064D4;
+    }
+
+    cursor: pointer;
+
+    a {
+        // font-family: PingFangSC-Light;
+        color: #666;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .btntxt {
+        :focus-within {
+            color: #666;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        vertical-align: middle;
+    }
+}
+
+.el-range-input {
+    background: transparent;
+}
+
+.el-range-separator {
+    color: rgb(192, 196, 204);
+}
+
+.city-tip {
+    .el-button {
+        background-color: #fff;
+    }
+
+    position: relative;
+
+    .closed {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        right: -2px;
+        z-index: 9999;
+        cursor: pointer;
+
+        .el-icon-close {
+            font-size: 16px;
+            color: #909399;
+        }
+    }
+
+    .el-tabs__nav-scroll {
+        margin-top: 9px;
+    }
+}
+
+
+.show-out {
+    display: inline-block;
+    text-align: center;
+
+    &:focus {
+        border-color: #4064D4;
+    }
+
+
+    cursor: pointer;
+
+    a {
+        color: #666;
+        text-decoration: none;
+        margin-right: 10px;
+        // font-family: PingFangSC-Light;
+    }
+
+    img {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        vertical-align: middle;
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        margin-top: -1px;
+    }
+
+    .btntxt {
+        color: #666;
+
+        :focus-within {
+            color: #666;
+        }
+    }
+}
+
+
+
+.btn-bgc {
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+    color: #666;
+
+
+
+    &:hover {
+        border-color: #4064D4;
+    }
+
+    .el-icon-circle-close {
+        position: absolute;
+        right: 8px;
+        color: rgb(192, 196, 204);
+    }
+}
+
+.citys-parn {
+    background: #fff;
+    color: #666;
+}
+
+.city-box .el-tabs__item {
+    font-size: 12px !important;
+    height: 14px;
+    line-height: 11px;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.city-box {
+    .el-tabs__content {
+        border: 0;
+        background: #fff;
+    }
+
+    .el-tab-pane {
+        height: 175px;
+        overflow-y: auto;
+        font-size: 12px !important;
+        padding: 0;
+    }
+
+    .el-tabs__item.is-active {
+        background-color: transparent;
+        color: #4064D4;
+        border-left-color: transparent;
+    }
+
+    .el-tabs__header {
+        margin-bottom: 0;
+    }
+
+    .el-tabs__nav {
+        padding: 12px 0;
+    }
+}
+
+.hot-city {
+    span {
+        display: inline-block;
+        width: 76px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: 15px;
+        text-align: center;
+        // font-family: PingFangSC-Light;
+        font-size: 14px;
+        color: #666;
+        letter-spacing: 0;
+        cursor: pointer;
+
+        &.citys {
+            background: transparent;
+            color: #666;
+        }
+    }
+}
+
+.select-year {
+    width: 170px;
+    height: 34px;
+    color: #666;
+    border: 1px solid #DCDFE6;
+    background: #fff;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 30px;
+    position: relative;
+    line-height: 34px;
+
+    &.blue-col {
+        border-color: #4064D4;
+    }
+
+    &.whit-col {
+        border-color: #4064D4;
+    }
+
+    .select-in {
+        width: 170px;
+        height: 34px;
+        position: absolute;
+        top: -1px;
+        left: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .until {
+            height: 34px;
+            margin-top: 1px;
+            background: #fff;
+            text-align: center;
+            color: #666;
+        }
+
+        .select-dow {
+            width: 70px;
+            height: 34px;
+
+            .el-input__inner {
+                height: 30px;
+                border: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            .el-input__suffix {
+                display: none;
+            }
+        }
+    }
+
+    .el-icon-arrow-down {
+        font-size: 14px;
+        color: #c0c4cc;
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        transition: all 0.5s;
+    }
+
+    .to-clear {
+        font-size: 14px;
+        color: #c0c4cc;
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    .rota-deg {
+        transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+    }
+}
+
+
+/* 
+city-box 省市框
+选择数字select
+*/
+
+
+/* 级联 */
+.el-cascader__dropdown {
+    background: #fff;
+    border-color: #DCDFE6;
+    color: #666;
+
+    .el-cascader-menu {
+        border-right: 1px solid #DCDFE6;
+        color: #666;
+
+        li {
+            background: #fff;
+
+            &:hover {
+                background: rgba(67, 161, 172, 0.07);
+                color: #4064D4;
+            }
+
+            &.in-active-path {
+                color: #4064D4;
+                font-weight: normal;
+                ;
+            }
+
+            &.el-cascader-node:not(.is-disabled):focus {
+                background: #fff;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,58 @@
+//定义位移样式
+.loop-position(@n: 50)when(@n >=0) {
+    .mt@{n} {
+        margin-top: (1px * @n ) !important;
+    }
+
+
+
+    .mb@{n} {
+        margin-bottom: (1px * @n ) !important;
+    }
+
+    .ml@{n} {
+        margin-left: (1px * @n ) !important;
+    }
+
+    .mr@{n} {
+        margin-right: (1px * @n ) !important;
+    }
+
+    .pt@{n} {
+        padding-top: (1px * @n ) !important;
+    }
+
+    .pb@{n} {
+        padding-bottom: (1px * @n ) !important;
+    }
+
+    .pl@{n} {
+        padding-left: (1px * @n ) !important;
+    }
+
+    .pr@{n} {
+        padding-right: (1px * @n ) !important;
+    }
+
+    .p@{n} {
+        padding: (1px * @n ) !important;
+    }
+
+    .m@{n} {
+        margin: (1px * @n ) !important;
+    }
+
+    .loop-position((@n - 5));
+}
+
+//定义字体大小
+.loop-fonts(@n: 30)when(@n > 10) {
+    .f@{n} {
+        font-size: (1px * @n ) !important;
+    }
+
+    .loop-fonts((@n - 2));
+}
+
+.loop-position(100);
+.loop-fonts(30);

@@ -1,0 +1,65 @@
+.invoice {
+    &-stat {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &-stat-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    &-stat-content-top {
+        font-size: 16px;
+        color: #ffffff;
+        letter-spacing: 0;
+        line-height: 16px;
+    }
+
+    &-stat-content-bottom {
+        font-size: 36px;
+        color: #19bfdf;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    &-stat-logo1,
+    &-stat-logo2 {
+        width: 56px;
+        height: 56px;
+        margin-left: 40px;
+    }
+
+    &-stat-logo1 {
+        // background: url("~@/assets/images/stat/logo1.png") no-repeat;
+    }
+
+    &-stat-logo2 {
+        // background: url("~@/assets/images/stat/logo2.png") no-repeat;
+    }
+
+    /* 概况统计结束*/
+    &-wrap {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+    }
+
+
+
+    &-echart-wrap {
+        position: relative;
+        padding: 10px 10px;
+    }
+}
+
+
+.echart-big-wrap {
+    position: relative;
+}
+
+

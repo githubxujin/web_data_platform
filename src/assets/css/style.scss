@@ -1,0 +1,377 @@
+@import "./light/index";
+@import "./dark/index";
+@import "./echart";
+@import "./mixins/loading";
+
+.el-tooltip__popper {
+    max-width: 500px;
+}
+
+/*
+ *                        _oo0oo_
+ *                       o8888888o
+ *                       88" . "88
+ *                       (| -_- |)
+ *                       0\  =  /0
+ *                     ___/`---'\___
+ *                   .' \\|     |// '.
+ *                  / \\|||  :  |||// \
+ *                 / _||||| -:- |||||- \
+ *                |   | \\\  - /// |   |
+ *                | \_|  ''\---/''  |_/ |
+ *                \  .-\__  '-'  ___/-. /
+ *              ___'. .'  /--.--\  `. .'___
+ *           ."" '<  `.___\_<|>_/___.' >' "".
+ *          | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *          \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *      =====`-.____`.___ \_____/___.-`___.-'=====
+ *                        `=---='
+ * 
+ * 
+ *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * 
+ *            佛祖保佑       永不宕机     永无BUG
+ */
+/* 兼容safari不错位 */
+.el-table th.gutter {
+    display: table-cell !important;
+}
+
+.el-table colgroup.gutter {
+    display: table-cell !important;
+}
+
+
+
+.el-table__body {
+    // 使表格兼容safari，不错位
+    width: 100%;
+    table-layout: fixed !important;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+// 字体
+@font-face {
+    font-family: "PingFang-SC-Regular";
+    src: url("./font/PingFang-SC-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PingFangSC-Light";
+    src: url("./font/de45d7136178b776ee438d73cb0b52e2.ttf");
+}
+
+
+
+
+.dark {
+    .to-links {
+        font-size: 14px;
+        color: #43a1ac;
+        letter-spacing: 0.44px;
+        margin-right: 10px;
+        text-decoration: underline;
+    }
+
+    .c_B {
+        color: #51b5bf;
+    }
+
+    .c_W {
+        color: #fff;
+    }
+
+    .tc {
+        text-align: center;
+    }
+
+    &,
+    body {
+        font-family: PingFangSC-Light;
+        background: #1d1e23;
+    }
+
+    /* 滚动条样式 */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-button {
+        height: 0px;
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #2a3c40;
+        border-radius: 6px;
+    }
+
+    /*滚动条里面轨道*/
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        background: #1d1e23;
+    }
+
+    .tabs-title {
+        color: #43a1ac;
+        font-family: PingFangSC-Light;
+        font-size: 14px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            padding-right: 20px;
+
+            span {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+                border: 1px solid #43a1ac;
+                border-radius: 2px;
+                font-size: 14px;
+                cursor: pointer;
+
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.light {
+    .box-shadow {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+    }
+
+    .to-links {
+        font-size: 14px;
+        color: #4064D4;
+        letter-spacing: 0.44px;
+        margin-right: 10px;
+        text-decoration: underline;
+
+
+    }
+
+    .c_B {
+        color: rgba(255, 255, 255, 0.80);
+    }
+
+    &,
+    body {
+        font-family: PingFang-SC-Regular;
+        background-color: #EBECF3;
+    }
+
+    /* 滚动条样式 */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-button {
+        height: 0px;
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #7596FF;
+        border-radius: 6px;
+    }
+
+    /*滚动条里面轨道*/
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        background: #F1F4FC;
+    }
+
+    .tabs-title {
+        color: #4064D4;
+        font-family: PingFang-SC-Regular;
+        font-size: 14px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            padding-right: 20px;
+
+            span {
+                color: #fff;
+                background: #4064D4;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+                border-radius: 2px;
+                font-size: 14px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #7992E0;
+
+                }
+
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+//去除tab键样式
+i {
+    outline: none;
+}
+
+.chartTop {
+    // display: flex;
+    // justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-right: 40px;
+    height: 20px;
+
+    .bd {
+        // flex:1;
+        float: left;
+    }
+
+    .fd {}
+}
+
+.chartTopBox {
+    width: 370px;
+    white-space: normal;
+    padding-top: 10px;
+
+    div {
+        display: inline-block;
+        width: 33.3%;
+        white-space: nowrap;
+    }
+}
+
+.chartTopBox1 {
+    width: 500px;
+    white-space: normal;
+    padding-top: 10px;
+
+    div {
+        display: inline-block;
+        width: 25%;
+        white-space: nowrap;
+    }
+}
+
+.chartTopBox2 {
+    // margin: 0 auto;
+    width: 800px;
+    white-space: normal;
+    padding-top: 10px;
+
+    div {
+        display: inline-block;
+        width: 33.3%;
+        white-space: nowrap;
+    }
+}
+
+
+
+
+.n-title {
+    font-size: 16px;
+    padding: 20px 0 0px 0;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+.w200 {
+    width: 200px;
+}
+
+
+
+:-webkit-full-screen {
+    padding: 20px;
+    // background-color: #232528;
+}
+
+.dark{
+    :-webkit-full-screen {
+        background-color: #232528;
+    }
+}
+.light{
+    :-webkit-full-screen {
+        background-color: #ebecf3;
+    }
+}
+
+/* deeper elements */
+:-webkit-full-screen video {
+    width: 100%;
+    height: 100%;
+}
+
+.style-table-wrap {
+    padding: 20px 20px 20px 20px;
+}
+
+.dark {
+    .markerInfo {
+        background: rgba(26, 27, 27, 0.5);
+        border: 1px solid #43a1ac;
+        padding: 2px 5px;
+        white-space: nowrap;
+    }
+}
+
+.light {
+    .markerInfo {
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid #4064d4;
+        border-radius: 2px;
+        padding: 2px 5px;
+        white-space: nowrap;
+        color: #666666;
+
+    }
+}

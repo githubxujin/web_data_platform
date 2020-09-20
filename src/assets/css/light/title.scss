@@ -1,0 +1,55 @@
+.el-title {
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    font-family: PingFangSC-Regular;
+    font-weight: normal;
+}
+
+.sub-title {
+    font-size: 14px;
+    color: #4064D4;
+    letter-spacing: 0.44px;
+    line-height: 16px;
+}
+
+.invoice-echart-title {
+    font-family: PingFangSC-Regular;
+    position: absolute;
+    height: 41px;
+    line-height: 32px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    top: 20px;
+    left: 20px;
+    right: 0;
+    z-index: 999;
+}
+
+
+
+
+.echart-big-title {
+    position: absolute;
+    height: 41px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    top: -40px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.pie-title {
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 1.5px;
+    position: absolute;
+    left: 33px;
+    top: 20px;
+}

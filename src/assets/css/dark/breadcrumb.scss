@@ -1,0 +1,32 @@
+.el-breadcrumb__inner {
+    font-size: 12px;
+    color: #909399;
+}
+
+.el-breadcrumb__inner a,
+.el-breadcrumb__inner.is-link {
+    color: #43A1AC;
+}
+
+.el-breadcrumb__item:last-child .el-breadcrumb__inner,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner:hover {
+    color: #909399;
+}
+
+.el-breadcrumb {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.el-breadcrumb__separator {
+    margin: 0 9px;
+    font-weight: 700;
+    color: #909399;
+}
+
+.el-breadcrumb__inner a:hover,
+.el-breadcrumb__inner.is-link:hover {
+    color: #43A1AC;
+}

@@ -1,0 +1,34 @@
+.el-iconfont {
+    margin-bottom: 20px;
+
+    .iconfont {
+        font-size: 18px;
+        padding: 4px;
+        margin-right: 10px;
+        border-radius: 2px;
+        background: #4064D4;
+        color: #fff;
+
+        &:hover {
+            cursor: pointer;
+            background: #7992E0;
+            color: #fff;
+        }
+    }
+
+    [class*=" el-icon-"],
+    [class^="el-icon-"] {
+        background: #4064D4;
+        color: #fff;
+        font-size: 18px;
+        border: 1px solid #4064D4;
+        padding: 6px;
+        margin-right: 10px;
+        border-radius: 2px;
+
+        &:hover {
+            cursor: pointer;
+            background: #7992E0
+        }
+    }
+}

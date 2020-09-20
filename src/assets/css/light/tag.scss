@@ -1,0 +1,6 @@
+@import "../mixins/tag";
+/*     $color, $border-color, $background-color, $selector */
+
+@include tag(#EC6249, #FFD3C3, #FFD3C3, 'danger');
+@include tag(#3DBD7D, #CEE9D7, #CEE9D7, 'success');
+@include tag(#4064D4, #D9E0F6, #D9E0F6, 'info');

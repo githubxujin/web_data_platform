@@ -1,0 +1,383 @@
+.light {
+    .header {
+
+        .el-dialog__wrapper {
+            z-index: 99999999 !important;
+        }
+
+        .el-message-box__wrapper {
+            z-index: 99999999 !important
+        }
+
+        width: 100%;
+        height: 50px;
+        background: #4064D4;
+        border: 1px solid rgba(52, 133, 139, 0.14);
+        box-shadow: 0 2px 63px 0 rgba(26, 62, 79, 0.22);
+
+        .el-tabs--left .el-tabs__header.is-left {
+            background-color: #F3F8FE;
+        }
+
+        // 由于点击搜索框会导致退出按钮变形，把280的宽度更改为260的宽度
+        .header-right-l {
+            .el-input__inner {
+                color: #fff;
+                transition: all 0.5s;
+
+                &::placeholder {
+                    color: #fff;
+                }
+
+                &:focus {
+                    border: 1px solid #fff;
+                    width: 250px;
+                }
+            }
+        }
+
+        .radio-box {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            font-size: 16px;
+            color: #303133;
+            z-index: 1;
+            width: 90%;
+            margin: 0 auto;
+
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                width: 100%;
+                border-bottom: 2px solid #ebeef5;
+                content: "";
+            }
+
+            .radio-item {
+                position: relative;
+                cursor: pointer;
+                height: 45px;
+                line-height: 45px;
+                z-index: 2;
+                width: 50%;
+                text-align: center;
+
+                &.act {
+                    color: #366f71;
+                    border-bottom: 2px solid #366f71;
+                    margin-bottom: 1px;
+                }
+            }
+        }
+
+        .el-tabs__nav-scroll {
+            // 操作配置里面的左侧的高度用来改变竖线
+            height: 240px;
+        }
+
+        .header-menu {
+            .el-tabs__item {
+                &:hover {
+                    color: #4064D4;
+                }
+
+                &:last-child {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .header-right-l,
+        .header-right-theme {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .drop-menu {
+            height: 50px;
+            line-height: 56px;
+
+            span {
+                color: #fff;
+            }
+
+
+        }
+
+        .iconfont,
+        .logout {
+            height: 50px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-left: 8px;
+            }
+        }
+
+        .el-dropdown {
+            margin-top: 16px;
+            margin-left: -30px;
+        }
+
+        .el-nickname {
+            color: #4064D4;
+        }
+
+        .user-name {
+            color: #4064D4;
+        }
+
+        .el-icon-user:before,
+        .el-icon-bell:before {
+            color: #4064D4;
+            font-size: 20px;
+        }
+
+        .el-icon-arrow-down:before {
+            color: #4064D4;
+            border: 1px solid #4064D4;
+            border-radius: 50%;
+        }
+
+        .icon-tongyong-yonghumingtubiao1:before {
+            color: #4064D4;
+        }
+
+        .el-button {
+            border: none;
+            color: #4064D4;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        .el-tabs__content {
+            background: none;
+        }
+
+        .el-tabs__item {
+            color: #666;
+        }
+
+        .el-tabs__item.is-active {
+            background: none;
+            color: #4064D4;
+
+            &::before {
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: #4064D4;
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                margin-top: -2px;
+            }
+        }
+
+        .el-tabs__item:hover {
+            background: none;
+        }
+
+        .el-input__inner {
+            background-color: #4064D4;
+            margin-top: 12px;
+            width: 140px;
+            height: 28px;
+            line-height: 28px;
+            border: 1px solid #fff;
+        }
+
+        .el-input__icon {
+            line-height: 52px;
+            color: #fff;
+        }
+
+        .el-tabs__nav-wrap::after {
+            background-color: #ECF0FE;
+        }
+
+        .el-tabs__active-bar {
+            background-color: #4064D4;
+
+        }
+
+
+        &-wrap {
+            width: 1360px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-left {
+            display: flex;
+        }
+
+        &-right {
+            width: 470px;
+            display: flex;
+            justify-content: flex-end;
+            height: 50px;
+
+            &-l {
+                margin-right: 10px;
+            }
+
+            &-m {
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                margin-right: 20px;
+
+                .loging-name {
+                    height: 70px;
+                    margin-top: -10px;
+                    display: flex;
+                    align-items: center;
+
+                    .wel {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+
+        &-nav {
+            list-style: none;
+            font-size: 15px;
+            color: #BEC9F0;
+            display: flex;
+
+            .active {
+                color: #fff;
+            }
+
+            li {
+                margin-right: 56px;
+                position: relative;
+                font-size: 15px;
+                height: 40px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #fff;
+
+                    .header-menu {
+                        display: block;
+
+                    }
+                }
+            }
+        }
+
+        &-menu {
+            border: 1px solid #DCDFE6;
+            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+            display: none;
+            position: absolute;
+            top: 38px;
+            width: 960px;
+            background: #fff;
+            z-index: 999999999;
+            box-sizing: border-box;
+
+            &:before {
+                content: " ";
+                border-bottom: 8px solid #fff;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                position: absolute;
+                top: -4px;
+                left: 4px;
+            }
+        }
+
+        &-logo {
+            width: 134px;
+            height: 50px;
+            margin-left: -20px;
+            background: url("../../assets/images/logo.png") no-repeat 40% center;
+            background-size: 100px 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-menu {
+            &-right {
+                display: flex;
+                width: 787px;
+                margin-top: 30px;
+
+                .menu-right-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 24px;
+                }
+
+                .menu-right-top-title {
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 4px;
+                    height: 20px;
+                    border-bottom: 2px solid #ECF0FE;
+                }
+
+                .active {
+                    color: #4064D4;
+
+
+                    &::before {
+                        content: "";
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background: #4064D4;
+                        position: absolute;
+                        left: -10px;
+                        top: 5px;
+                    }
+                }
+
+                .header-menu-right-title {
+                    position: relative;
+
+                    &:hover,
+                    :focus {
+                        cursor: pointer;
+                        color: #4064D4;
+                    }
+
+                    //第三级菜单高亮
+                    &:hover {
+                        &::before {
+                            content: "";
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            background: #4064D4;
+                            position: absolute;
+                            left: -10px;
+                            top: 5px;
+                        }
+                    }
+
+                    margin-top: 12px;
+                    font-size: 12px;
+                    color: #666;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+
+}

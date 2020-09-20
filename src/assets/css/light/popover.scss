@@ -1,0 +1,22 @@
+.el-popover {
+    background: #fff;
+    border: 1px solid #DCDFE6;
+    color: #A0A3A8;
+}
+
+.el-tooltip__popper {
+    font-family: PingFangSC-Light;
+    color: #D3D3D4;
+}
+
+// .el-tooltip__popper.is-dark {
+//     background: #18454A;
+//     border-radius: 2px 2px 2px 0 0 0 2px;
+//     border-radius: 2px 2px 2px 0px 0px 0px 2px;
+//     font-size: 12px;
+//     color: #FFFFFF;
+// }
+
+.el-popper[x-placement^=top] .popper__arrow::after {
+    border-top-color: #2B3136 !important;
+}
